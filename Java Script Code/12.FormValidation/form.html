@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="sectionclass">
+
+        <header class="header">
+            <h1>This is Header. Design by Shanto.</h1>
+        </header>
+
+        <section class="maincontent">
+            
+
+            <form method="post" name="myform" onsubmit="return validateForm();">
+            <table>
+
+                <tr>
+                    <td style="width: 10px;">Name </td>
+                    <td><input type="text" name="name" placeholder="Enter your name" ></td>
+                </tr>
+                <tr>
+                    <td>Email </td>
+                    <td><input type="text" name="email"  placeholder="Enter your email"></td>
+                </tr>
+                <tr>
+                    <td>Telephone </td>
+                    <td>
+                        <input type="text" name="telephone" placeholder="Enter your telephone number" ><br/>
+                        <input type="checkbox" name="checkbox" onclick="enabledisable(this);">Please don't call me.
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="checkbox">Please do not call me.</td>
+                </tr> -->
+                <tr>
+                    <td>What can we help you with? </td>
+                    <td>
+                        <select name="select" value="">
+                            <option value="select">Select</option>
+                            <option value="service">Customer Service</option>
+                            <option value="question">Question</option>
+                            <option value="comment">Comment</option>
+                            <option value="other">Other</option>
+                        </section>
+                    </td>
+                </tr>
+                <tr >
+                    <td >Comments</td>
+                    <td><input type="text" name="comment"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit" name="submit">
+                        <input type="reset" value="Reset" name="Refresh">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td >
+                        <div id="messageshow">
+                            
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+           </form>
+
+           <script src="form.js">
+            
+           </script>
+
+        </section>
+
+        <footer class="footer">
+            <h1>This is Footer. Desing by Shanto.</h1>
+        </footer>
+
+    </section>
+    
+    
+</body>
+</html>

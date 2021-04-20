@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MenuHeaderFooter</title>
+	<style >
+		*{
+			box-sizing: border-box;
+		}
+		.header,.footer{
+			background-color: grey;
+			color: white;
+			padding: 5px;
+			
+		}
+		.clearfix{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.column{
+			float: left;
+			padding: 15px;
+		}
+		.content{
+			width: 75%;
+		}
+		.menu{
+			width: 25%;
+		}
+		.ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		.menu li{
+			padding: 8px;
+			margin-bottom: 8px;
+			background-color: #33b5e5;
+			color: #ffffff;
+		}
+		li:hover{
+			background-color: #0099cc;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="header" >
+		<h2>Mohammad Shahinur Rahman</h2>
+	</div>
+
+	<div class="clearfix">
+		<div class="column menu">
+			<ul class="ul">
+				<li>The Flight</li>
+				<li>The City</li>
+				<li>The Lisland</li>
+				<li>The Rajshahi</li>
+			</ul>
+		</div>
+
+		<div class="column content">
+			<h1>The city</h1>
+			<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+		    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>			
+		</div>
+		
+	</div>
+
+
+	<div class="footer">
+		<h2>Shanto</h2>
+	</div>
+
+</body>
+</html>

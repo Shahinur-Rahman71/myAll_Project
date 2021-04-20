@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html Form</title>
+	<style >
+		
+		div{
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			padding: 15px;
+		}
+
+		input,select{
+			width: 100%;
+			padding: 19px ;
+			margin: 8px 0; 
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			box-sizing: border-box;
+		}
+
+		input[type=submit]{
+			width: 100%;
+			background-color: blue;
+			color: black;
+			padding: 14px 30px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover{
+			background-color: yellow;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div>
+		<form>
+			<label>First Name</label>
+			<input type="text" name="fname" placeholder="Your first name.....">
+
+			<label>Last Name</label>
+			<input type="text" name="lname" placeholder="Yout last name......">
+
+			<label>Country</label>
+			<select>
+				<option>Bangladesh</option>
+				<option>India</option>
+				<option>Pakistan</option>
+				<option>japan</option>
+			</select>
+
+			<input type="submit" value="Submit">
+			
+		</form>
+	</div>
+
+</body>
+</html>

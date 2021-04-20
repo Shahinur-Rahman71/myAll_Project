@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="hello"></div>
+    <script type="text/babel">
+
+        function Function1(name1){          
+            return (
+                <div>
+                    <h1>{name1.name} <br/> Age: {name1.age}</h1>
+                    <School name2="Meher Chandi High School"/>
+                </div>
+            );
+        }
+        function School(info){
+            return (<h1>School: {info.name2}</h1>);
+        }
+        function Country(attribute){
+            return (
+                <h3>Country Name: {attribute.name}</h3>
+            );
+        }
+        function App(){
+            return (
+                <div>
+                    <Country name="Bangladesh"/>
+                    <Country name="Bangladesh"/>
+                    <Country name="Bangladesh"/>
+                </div>
+            );
+        }
+        function Sum(n){
+            return n.num1;
+        }
+
+        //const Element = <Function1 name="Hi, I am Shanto." age="24"/>;
+        ReactDOM.render( 
+            <div>  
+                      
+                <Function1 name="Hi, I am Shanto." age="24"/>
+                <App />
+                 <h5>Visit = infinity</h5>  
+                <Sum num1="2" num2="3"/>
+            </div>,         
+            document.getElementById('hello')
+        );
+        
+    </script>
+
+</body>
+</html>

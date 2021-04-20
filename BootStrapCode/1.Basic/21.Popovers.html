@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>Popovers</title>
+</head>
+<body>
+    <h1 class="display-4 text-center bg-dark mt-4 text-white">Popovers</h1>
+    <div class="container">
+<br><br><br><br>
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's-5 very engaging. Right?" data-placement="top">Click to toggle popover</button>
+
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's-5 very engaging. Right?" data-placement="bottom">Click to toggle popover</button>
+
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's-5 very engaging. Right?" data-placement="right">Click to toggle popover</button>
+<br><br>
+        <!-- for dismiss popovers -->
+
+        <button type="button" class="btn btn-lg btn-success" data-toggle="popover" title="Popover title" id="click" data-trigger="focus" data-content="And here's some amazing content. It's-5 very engaging. Right?" data-placement="right">Click to toggle popover</button>
+<br><hr>
+
+        <button class="btn btn-secondary btn-sm" onclick="showPopover()">Show popover</button>
+
+        <button class="btn btn-secondary btn-sm" onclick="hidePopover()">Hide popover</button>
+
+        <button class="btn btn-secondary btn-sm" onclick="togglePopover()">Toggle popover</button>
+
+    </div>
+
+    <script>
+        
+        $('[data-toggle="popover"]').popover();
+
+
+        function showPopover(){
+            $('#click').popover('show');
+        }
+        function hidePopover(){
+            $('#click').popover('hide');
+        }
+        function togglePopover(){
+            $('#click').popover('toggle');
+        }
+
+    </script>
+
+</body>
+</html>

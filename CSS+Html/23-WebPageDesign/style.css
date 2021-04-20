@@ -1,0 +1,87 @@
+ *{
+ 	margin:0px 0px 0px 0px;
+ 	padding: 0px;
+ }
+
+ body{
+ 	font-family: sans-serif;
+ 	text-align: center;
+ }
+
+ #center{
+ 	
+ 	text-align: left;
+ 	width: 960px;
+ 	margin: 0px auto;
+ }
+/* header starts from here*/
+ #header{
+ 	border: 2px solid blue;
+ 	margin: 5px 0;
+ 	padding: 20px;
+ }
+
+ .logo{
+ 	display: inline;
+    vertical-align: middle;
+ }
+
+ #header h1{
+ 	display: inline;
+ 	
+ }
+ /* header ends from here*/
+
+ /* navigation starts from here*/
+
+ #nav{
+ 	border: 2px solid blue;
+ 	margin: 5px 0;
+ 	padding: 20px;
+ }
+
+ #nav ul li{
+ 	list-style-type: none;
+ 	display: inline;
+ }
+
+ #nav ul li a{
+ 	margin: 5px;
+ }
+ #nav ul li a:hover{
+ 	background-color: red;
+ 	color: green;
+ }
+ /* nav end from here*/
+
+ /* aside starts from here*/
+
+ #aside{
+ 	width: 296px;
+ 	border: 2px solid blue;
+ 	padding: 10px;
+ 	float: left;
+ }
+
+ /* aside end from here*/
+
+ /* secton starts from here*/
+
+ #section{
+ 	width: 606px;
+ 	padding: 10px;
+ 	margin: 0px 0px 10px 10px;
+ 	border: 2px solid blue;
+ 	float: left;
+
+ }
+
+ /* section end from here*/
+
+ #footer{
+ 	border: 2px solid blue;
+ 	padding: 20px;
+ 	margin: 2px;
+ 	text-align: center;
+ 	clear: left;
+ }

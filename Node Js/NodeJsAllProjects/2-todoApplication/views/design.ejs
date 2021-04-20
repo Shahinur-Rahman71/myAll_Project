@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>Hay, I Need Todo</h1>
+    <form action="/todos" method="POST">
+        <!-- here "/todos" is route -->
+        <input type="text" name="description"> 
+        <button type="submit">Add</button>
+    </form>
+
+    <ul>
+               
+        <% for (let x of todos) { %>
+            <li>
+                <form action="/todos/<%= x._id %>/completed" method="POST">
+                    <%= x.description %> - <%= x.done %>
+                    <button type="submit">Done</button>
+                </form>
+                 
+            </li>
+        <% } %>
+        
+    </ul>
+
+    <h1>Done Successfully</h1>
+    <ul>
+        <% for (let x of todosDone) { %>
+            <li>
+                <form action="/todos/<%= x._id %>/completed" method="POST">
+                    <%= x.description %> - <%= x.done %>
+                    <button type="submit">Owo!</button>
+                </form>
+                 
+            </li>
+        <% } %>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- For font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <title>Button and ButtonGroup</title>
+</head>
+<body>
+    <h1 class="text-center mb-5 display-4">Button And ButtonGroup</h1>
+    <div class="container">
+
+        <button type="button" class="btn btn-primary active">Primary</button>
+        <button type="button" class="btn btn-secondary ">Secondary</button>
+        <button type="button" class="btn btn-dark disabled">Dark</button>
+        <button type="button" class="btn btn-warning active">Warning</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <br><br>
+
+        <!-- button tag -->
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="button">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+        <br><br>
+        <!-- button outlining -->
+        <button class="btn btn-outline-primary" type="button">Primary</button>
+        <button class="btn btn-outline-secondary" type="button">Secondary</button>
+        <button class="btn btn-outline-success" type="button">Success</button>
+        <button class="btn btn-outline-danger" type="button">Danger</button>
+        <button class="btn btn-outline-warning" type="button">Warning</button>
+        <br><br>
+        <!-- for button sizing -->
+        <button type="button" class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i> Large button</button>
+        <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+        <button type="button" class="btn btn-dark btn-block">Block level button</button>
+
+        <button type="button" class="btn btn-dark mt-2 btn-toggle" data-toggle="button">Block level button</button>
+        <br><br>
+        <div class="dropdown">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">My Dropdown</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Link one</a>
+                <a href="#" class="dropdown-item">Link two</a>
+                <a href="#" class="dropdown-item">Link three</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="btn-group">
+            <button class="btn btn-success" type="button">left</button>
+            <button class="btn btn-dark" type="button">middle</button>
+            <button class="btn btn-danger" type="button">right</button>
+        </div>
+        
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

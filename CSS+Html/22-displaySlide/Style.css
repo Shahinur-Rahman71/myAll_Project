@@ -1,0 +1,97 @@
+.shanto{
+	border: 5px solid blue;
+	float: left;
+	width: 75%;
+	/*height: 30px;*/
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 12%;
+	margin-bottom: 10px;
+}
+
+.navigation{
+	clear: left;
+	margin-left: 9%;
+	
+}
+
+.navigation ul li{
+	list-style: none;
+	background-color: green;
+	padding: 5px;
+	margin: 5px;
+	display: inline;
+	width: 100px;
+	color: white;
+	text-align: center;
+}
+
+span{
+	color: pink;
+	visibility: hidden;
+}
+
+#dad ul li:first-letter{
+	font-size: 40px;
+
+}
+#dad ul li:first-child{
+	color: red;
+
+}
+#dad ul li:last-child{
+	color: red;
+
+}
+#dad ul li:before{
+	content: "Rajshahi ";
+
+}
+#dad ul li:after{
+	content: " Islam ";
+
+}
+
+a{
+	text-decoration:none;
+	color:yellow;
+	font-size:30px;
+}
+a:visited{
+	color:hotpink;
+}
+a:hover{
+	color:black;
+}
+
+
+a:active{
+	color:blue;
+
+}
+
+.circle{
+	
+	height: 200px;
+	width:  200px;
+	border-radius: 150px;
+	/*background-color: red;*/
+	border: 1px solid black;
+	margin-left: 38%;
+
+	-moz-box-shadow:inset 11px 10px 19px #000000;
+    -webkit-box-shadow:inset 11px 10px 19px #000000;
+    box-shadow:inset 11px 10px 19px #000000;
+
+    /*css code generator*/
+
+    background: rgba(248,80,50,1);
+background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,0.92) 48%, rgba(246,41,12,0.92) 51%, rgba(240,47,23,0.9) 65%, rgba(231,56,39,0.84) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(48%, rgba(241,111,92,0.92)), color-stop(51%, rgba(246,41,12,0.92)), color-stop(65%, rgba(240,47,23,0.9)), color-stop(100%, rgba(231,56,39,0.84)));
+background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,0.92) 48%, rgba(246,41,12,0.92) 51%, rgba(240,47,23,0.9) 65%, rgba(231,56,39,0.84) 100%);
+background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,0.92) 48%, rgba(246,41,12,0.92) 51%, rgba(240,47,23,0.9) 65%, rgba(231,56,39,0.84) 100%);
+background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,0.92) 48%, rgba(246,41,12,0.92) 51%, rgba(240,47,23,0.9) 65%, rgba(231,56,39,0.84) 100%);
+background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,0.92) 48%, rgba(246,41,12,0.92) 51%, rgba(240,47,23,0.9) 65%, rgba(231,56,39,0.84) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+Copy text
+}

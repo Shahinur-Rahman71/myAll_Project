@@ -1,0 +1,26 @@
+body{
+    margin: 30px;
+    padding: 10px;
+    outline: 0;
+}
+#maincontent{
+    margin: 0 auto;
+    width: 798px;
+    background: gray;
+    padding: 10px;
+    
+}
+
+.Button{
+    margin-left: 102px;
+    font-size: 25;
+    width: 130px;
+    background-color: indigo;
+    height: 40px;
+    color: ivory;
+    
+}
+.amimation{
+    box-shadow: 0 15px 18px 0 tomato;
+    opacity: 0.5;
+}

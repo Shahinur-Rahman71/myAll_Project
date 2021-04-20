@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Box</title>
+    <link rel="stylesheet" href="checstyle.css">
+</head>
+<body>
+
+    <section class="sectionclass">
+
+        <div class="header">
+            <h1>This is Header . Design by Shanto.</h1>
+        </div>
+        <div class="maincontent">
+            
+
+            <form action="" method="" name="myform">
+            <table>
+
+                <tr>
+                    <td><input type="text" name="inputtext" onchange="docal(this.form,this.name)"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="chbox" onclick="docal(this.form,this.name)"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="result" onchange="docal(this.form,this.name)"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset"  name="Click" ></td>
+                </tr>
+
+            </table>
+           </form>
+<br/> 
+           <form  name="secondform" onsubmit="textCode()">
+            <table>
+
+             
+                <tr>
+                    <td style="padding-left: 10px;" >Select</td> 
+                    <td>
+                        <input type="checkbox" name="chbox" value="JAVA">JAVA<br/>
+                        <input type="checkbox" name="chbox" value="JavaScript">JavaScript<br/>      
+                        <input type="checkbox" name="chbox" value="HTML">HTML<br/>      
+                        <input type="checkbox" name="chbox" value="CSS">CSS<br/>      
+                        <input type="checkbox" name="chbox" value="C++">C++      
+                    </td>
+                    
+                </tr>
+                
+                <tr> 
+                    <td></td>
+                    <td>
+                        <input type="submit"  value="Sbumit">
+                        <input type="reset"  value="Refresh" >
+                    </td>
+                    
+                </tr>
+                
+                
+
+            </table>
+           </form>
+
+
+            <script type="text/javascript">
+
+                function docal(form,name){
+                    if(name=="result"){
+                        if(form.chbox.checked){
+                            form.inputtext.value=Math.sqrt(form.result.value);
+                        }else{
+                            form.inputtext.value=Math.sqrt(form.result.value)/2;
+                        }
+                    }else{
+                        if(form.chbox.checked){
+                            form.result.value = form.inputtext.value*form.inputtext.value;
+                        }else{
+                            form.result.value = form.inputtext.value*2;
+                        }
+                    }
+                }
+
+                //for second block
+                
+                function textCode(){
+                    document.write("You Selected : "+shanto());
+                }
+                function shanto(){
+                    var code="<ul>";
+                    for(i=0;i<=4;i++){
+                        var result = document.secondform.chbox[i];
+                        if(result.checked){
+                            code += "<li>" + result.value;
+                        }
+                    }
+                    code += "</ul>";
+                    return code;
+                }
+            
+            </script>
+
+        </div>
+        <div class="footer">
+            <h1>This is Footer. Desing by Shanto.</h1>
+        </div>
+
+    </section>
+    
+    
+</body>
+</html>

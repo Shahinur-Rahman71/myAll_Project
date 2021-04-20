@@ -1,0 +1,27 @@
+body{
+	background-color: red;
+}
+
+.my{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	/*height: 100px;
+	width: 100px;*/
+}
+
+#clear{
+	clear: left;
+	margin-left: 20px;
+	
+}
+
+div ul li{
+	color: white;
+	font-size: 30px;
+}
+
+ul .test{
+	color: yellow;
+	font-size: 30px;
+}

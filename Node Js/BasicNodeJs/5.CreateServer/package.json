@@ -1,0 +1,13 @@
+{
+  "name": "5.CreateServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

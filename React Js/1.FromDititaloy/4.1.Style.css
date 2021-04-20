@@ -1,0 +1,29 @@
+.Container{
+    border: 1px solid red;
+    margin: 0 auto;
+    background-color: pink;
+    
+}
+.newDesign{
+    font-size: 30px;
+    color: black;
+    border: 1px inset;
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+}
+.action{
+    background: darkolivegreen;
+    
+}
+.Edit{
+    background:cyan;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+.Delete{
+    background: red;
+    padding: 10px;
+    font-weight: bold;
+    
+}

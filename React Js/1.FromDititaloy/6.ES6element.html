@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 Elements</title>
+</head>
+<body>
+    <script>
+        var a=3;
+        document.write(a);
+
+        let b=2;
+        b=3;
+        //alert("Value of b = "+b);
+
+        //Json object
+        let bdcity = {
+            "dhaka" : "20M",
+            "rajshahi" : "10M"
+        }    
+        //alert("dhaka population "+bdcity.rajshahi);
+        document.write("</br>"+bdcity.rajshahi);
+        let {dhaka,rajshahi} = bdcity;
+        document.write("</br>"+dhaka);
+
+        //Fat arrow function
+        const fatSum = function(a,b){
+            return a+b;
+        }
+        const fatSum1 = (a,b) => a+b;
+        const fatSum2 = (a,b) => {
+            a=a+2;
+            return a+b;
+        }
+        document.write("</br>"+fatSum2(2,3));
+        document.write("</br>"+fatSum1(2,3)+"</br>");
+
+        //ForEach loop
+        const arraylist =[1,2,3];
+        arraylist.forEach(function(item){
+            document.write(+item);
+        });
+        arraylist.forEach(item =>{
+            document.write(+item);
+        });
+
+        //Map
+        const squqre = a=>a*a;
+        const maps= arraylist.map(squqre);
+        document.write("</br>"+maps);
+
+    </script>
+    
+</body>
+</html>

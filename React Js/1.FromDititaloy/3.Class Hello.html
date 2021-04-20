@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="class"></div>
+
+    <script type="text/babel">
+
+        function Firstfunction(props){
+            return (
+                <div>
+                    <h1>Hi {props.age}</h1>
+                    <FirstClass boys={props.age} location="Rajshahi" name={props.name}/>
+                </div>
+            );
+        }
+        class FirstClass extends React.Component{
+            render(){
+                var ok=this.props;
+                return (
+                    <h3>My age {this.props.boys} <br/> Location : {this.props.location}<br/> Name : {ok.name}</h3>
+                );
+            }
+        }
+        ReactDOM.render(
+            <div>
+                <Firstfunction age="60" name="Hider"/>
+            </div>,            
+            document.getElementById('class')
+        );
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h2 id="demo">This is Constructor.</h2>
+    <script>
+        //constructor function for shanto object
+        // function shanto() is an object constructor function.
+        function shanto(name,age,lan){
+            this.name = name;
+            this.age = age;
+            this.langulage = lan;
+            this.people = function() {
+                return this.langulage;
+            }
+        }
+        // Here result is person object.
+        var result = new shanto("shahinur",23,"English");
+        var lang = new shanto("islam",24,"Bangla");
+
+        document.getElementById("demo").innerHTML = "My name is : "
+            +result.name+"<br/>My language is : "+lang.people();
+        
+
+    </script>
+    
+</body>
+</html>

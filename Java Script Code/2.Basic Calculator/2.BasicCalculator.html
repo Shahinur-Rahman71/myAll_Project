@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var num1=prompt("Enter the first number : ");
+        var num2=prompt("Enter the second number : ");
+        var sum,sub,div,modulas,mul;
+
+        num1= parseInt(num1, 10);
+        num2=parseInt(num2, 10);
+
+        sum=num1+num2;
+        sub=num1-num2;
+        div=num1/num2;
+        modulas=num1%num2;
+        mul=num1*num2;
+
+        document.write(num1+" + "+num2+" = "+sum+"<br/>");
+        document.write(num1+" - "+num2+" = "+sub+"<br/>");
+        document.write(num1+" / "+num2+" = "+div+"<br/>");
+        document.write(num1+" % "+num2+" = "+modulas+"<br/>");
+        document.write(num1+" * "+num2+" = "+mul+"<br/>");
+
+        for(var i=1;i<=10;i++){
+            if(i==5){
+                continue;
+            }
+            
+            document.write("oh,Fine.."+i+"<br/>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	outline: 0px;
+}
+
+body{
+	font-family: arial;
+	font-size: 18px;
+	color: #444;
+	line-height: 25px;
+}
+.content{
+	margin: 0 auto;
+	background: #f0f0f0;
+	width: 800px;
+
+}
+.header,.footer{
+	padding: 10px;
+	background: #ddd;
+	text-align: center;
+}
+.maincontent{
+	background: #fff;
+	min-height: 500px;
+	margin: 10px;
+	padding: 5px 10px;
+	
+}

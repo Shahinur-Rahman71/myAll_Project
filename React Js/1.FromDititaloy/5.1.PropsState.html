@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="4.1.Style.css">
+    <title>PropsState</title>
+</head>
+<body>
+    <div id="pop"></div>
+   
+    <script type="text/babel">
+
+    class FirstClass extends React.Component{
+
+        constructor(props){
+            super(props);
+            this.state = {
+                isEditing: false,
+                changeTitle: props.title
+            };
+            this.inputText = React.createRef();
+        }
+        edit(){
+            
+            this.setState({
+                isEditing: true
+            });
+        }
+        Save(){
+            const inputValue = this.inputText.current.value;
+            this.setState({
+                isEditing: false,
+                changeTitle: inputValue
+            });
+        }
+        isEditingFunction(){
+            const isEditing= this.state.isEditing;
+            const props = this.props;
+            if(isEditing===true){
+                return (
+                    <React.Fragment>
+                        <input
+                         defaultValue={props.stitle}
+                         ref= {this.inputText}
+                        />
+                        <button onClick={() => this.Save()}>Save</button>
+                    </React.Fragment>
+                )
+            }else{
+                return (
+                    <h5>{this.state.changeTitle}</h5>
+                )
+            }
+        }
+        delete(){
+            alert("You clicked delete button");
+            
+        }
+
+        //Lifecycle Method: render function er ag a call hobe.//Aita na use kora better
+        // componentWillMount(){
+        //     console.log("it's call before render function");
+        // }
+
+        //Lifecycle Method: render function er por a call hobe.
+        componentDidMount(){
+            console.log("it's call after render function");
+        }
+
+        render(){
+            const props=this.props;
+            console.log("From render function");
+            // const finalcount = this.state.totalcount;
+            // console.log("isEditing", this.state.isEditing);
+            return (
+                <div className="newDesign">
+                    {this.isEditingFunction()}
+                    <div className="action">
+                        <button className="Edit" onClick={() => this.edit()}>Edit</button>
+                        <button className="Delete" onClick={() => this.delete()}>Delete</button>
+                    </div>
+                    
+                </div>
+            )
+        }
+    }
+        ReactDOM.render(
+            <div className="Container">
+                <FirstClass title="BD Javascript Coder" stitle="Hi, I am shanto"/>
+                <FirstClass title="BD React Js Coder"/>
+
+            </div>,
+            document.getElementById("pop")
+            
+        );
+    </script>
+</body>
+</html>

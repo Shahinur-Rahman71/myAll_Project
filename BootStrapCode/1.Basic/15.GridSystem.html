@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Grid System</title>
+</head>
+<body>
+    <h1 class="display-4 text-center mt-4 bg-warning text-white">.....Grid System.....</h1>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                 <!-- col-sm-3: for small device this column get 3 col space -->
+                <h3>Shahinur Rahman</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia excepturi obcaecati impedit vitae asperiores, ad quia quas, recusandae adipisci libero similique voluptas nesciunt laborum totam blanditiis tempore consequuntur perferendis.</p>
+            </div>
+            <div class="col-12 col-sm-3 col-md-4 col-lg-5">
+                 <!-- col-sm-3: for small device this column get 3 col space -->
+                <h3>Shahinur Rahman</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia excepturi obcaecati impedit vitae asperiores, ad quia quas, recusandae adipisci libero similique voluptas nesciunt laborum totam blanditiis tempore consequuntur perferendis.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                 <!-- col-sm-6: for small device this column get 6 col space -->
+                <h3>Shahinur Rahman</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia excepturi obcaecati impedit vitae asperiores, ad quia quas, recusandae adipisci libero similique voluptas nesciunt laborum totam blanditiis tempore consequuntur perferendis.</p>
+            </div>
+        </div>
+<br><br>
+<!-- Nesting Grid -->
+<h3>-- Nesting Grid --</h3>
+        <div class="row mb-5">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Shahinur Rahman</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, maxime? Et consequuntur quo sit deserunt placeat reprehenderit error exercitationem ea tempora molestias, praesentium ad ipsa iste nostrum esse blanditiis quidem!</p>
+                        <div class="row">
+
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Shahinur Rahman</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, maxime? Et consequuntur quo sit deserunt placeat reprehenderit error exercitationem ea tempora molestias, praesentium ad ipsa iste nostrum esse blanditiis quidem!</p>
+                
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Shahinur Rahman</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, maxime? Et consequuntur quo sit deserunt placeat reprehenderit error exercitationem ea tempora molestias, praesentium ad ipsa iste nostrum esse blanditiis quidem!</p>
+                
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<br><br>
+
+        <h3>Offseting Column</h3>
+        <div class="row mb-5">
+            <div class="col">
+                <h1>Shahinur Rahman</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate eos odio magnam laborum explicabo cumque non, ipsa minus assumenda officia earum sed tenetur alias aliquid ipsum necessitatibus optio vitae voluptate?</p>
+            </div>
+            <div class="col offset-6">
+                <h1>Shahinur Rahman</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate eos odio magnam laborum explicabo cumque non, ipsa minus assumenda officia earum sed tenetur alias aliquid ipsum necessitatibus optio vitae voluptate?</p>
+            </div>
+        </div>
+<br><br>
+
+        <h3>Re-Ordering</h3>
+        <div class="row mb-5">
+            <!-- <div class="col order-last"> -->
+            <div class="col order-3">
+                <h1>first Column</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate eos odio magnam laborum explicabo cumque non, ipsa minus assumenda officia earum sed tenetur alias aliquid ipsum necessitatibus optio vitae voluptate?</p>
+            </div>
+            <!-- <div class="col order-fast"> -->
+            <div class="col order-1">
+                <h1>Second Column</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate eos odio magnam laborum explicabo cumque non, ipsa minus assumenda officia earum sed tenetur alias aliquid ipsum necessitatibus optio vitae voluptate?</p>
+            </div>
+            <div class="col order-2">
+                <h1>Third Column</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate eos odio magnam laborum explicabo cumque non, ipsa minus assumenda officia earum sed tenetur alias aliquid ipsum necessitatibus optio vitae voluptate?</p>
+            </div>
+        </div>
+<br><br>
+
+        <h3>Alignment</h3>
+        <div class="row mb-5 align-items-start" style="height: 200px; border: 1px solid black;">
+            <div class="col">
+                <h3>First Name</h3>
+            </div>
+            <div class="col">
+                <h3>Last Name</h3>
+            </div>
+            <div class="col">
+                <h3>University</h3>
+            </div>
+        </div>
+        <div class="row mb-5 align-items-center" style="height: 200px; border: 1px solid black;">
+            <div class="col">
+                <h3>First Name</h3>
+            </div>
+            <div class="col">
+                <h3>Last Name</h3>
+            </div>
+            <div class="col">
+                <h3>University</h3>
+            </div>
+        </div>
+        <div class="row mb-5 align-items-end" style="height: 200px; border: 1px solid black;">
+            <div class="col">
+                <h3>First Name</h3>
+            </div>
+            <div class="col">
+                <h3>Last Name</h3>
+            </div>
+            <div class="col">
+                <h3>University</h3>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

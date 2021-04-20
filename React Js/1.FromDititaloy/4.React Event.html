@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="4.1.Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="react"></div>
+    <script type="text/babel">
+    
+        class Eventclass extends React.Component{
+            Edit(){
+                alert("Click Edit Button");
+            }
+            Delete(){
+                alert("Click Delete Button");
+            }
+            render(){
+                const props=this.props;
+                return (
+                    // <div>
+                    //     <img src="https://paloimages.prothom-alo.com/contents/cache/images/120x66x1/uploads/media/2020/04/09/3131e7c3bc7bd3c37316e6245578ccfb-5e8eecd8c39cd.jpg?jadewits_media_id=1524300" alt="Oh!"/>
+                    //     <span>বায়ুদূষণে করোনায় মৃত্যুর ঝুঁকি বেশি: মার্কিন গবেষক দল</span>
+                    // </div>
+                    
+                    <div className="newDesign">
+                        <h2>{props.children}</h2>
+                        <div className="action">
+                            <button className="Edit" onClick={this.Edit}>Edit</button>
+                            <button className="Delete" onClick={this.Delete}>Delete</button>
+                        </div>
+                    </div>
+                    
+                )
+            }
+        }
+        ReactDOM.render(
+            <div className="Container">
+                <Eventclass>বায়ুদূষণে করোনায় মৃত্যুর ঝুঁকি বেশি: মার্কিন গবেষক দল</Eventclass>
+                <Eventclass>Shakib is the best Cricketer</Eventclass>
+            </div>,
+            document.getElementById('react')
+        );
+    </script>
+</body>
+</html>

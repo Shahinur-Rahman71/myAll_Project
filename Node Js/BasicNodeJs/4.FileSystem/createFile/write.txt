@@ -1,0 +1,9 @@
+{
+    "name":"shanto islam",
+    "village":"meherchandi",
+    "univercity":{
+        "dept":"cse",
+        "year":"4th",
+        "semester":"2nd"
+    }
+}

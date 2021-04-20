@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="4.1.Style.css">
+    <title>State</title>
+</head>
+<body>
+    <div id="react"></div>
+    <script type="text/babel">
+
+        function Title(props){
+            return (
+                <React.Fragment>
+                
+                    <b>{props.title}</b>
+                    <h3>Edited : {props.count}</h3>
+                
+                </React.Fragment>
+            )
+        }
+        class Eventclass extends React.Component{
+            constructor(props){
+                super(props);
+                this.state = {
+                    totalEditCount: 0
+                };
+            }
+            Edit(){
+                alert("Click Edit Button");
+                this.setState({
+                    totalEditCount: this.state.totalEditCount + 1
+                });
+            }
+            Delete(){
+                alert("Click Delete Button");
+                this.setState({
+                    totalEditCount: this.state.totalEditCount - 1
+                });
+            }
+            render(){
+                const props=this.props;
+                const totalcount = this.state.totalEditCount;
+                return (
+                    // <div>
+                    //     <img src="https://paloimages.prothom-alo.com/contents/cache/images/120x66x1/uploads/media/2020/04/09/3131e7c3bc7bd3c37316e6245578ccfb-5e8eecd8c39cd.jpg?jadewits_media_id=1524300" alt="Oh!"/>
+                    //     <span>বায়ুদূষণে করোনায় মৃত্যুর ঝুঁকি বেশি: মার্কিন গবেষক দল</span>
+                    // </div>
+                    
+                    <div className="newDesign">
+                        <Title title={props.title} count={totalcount}/>
+                        <h3>{props.children}</h3>
+                        <div className="action">
+                            <button className="Edit" 
+                            onClick={() => this.Edit()}>Edit</button>
+                            <button className="Delete"
+                            onClick={() => this.Delete()}>Delete</button>
+                        </div>
+                        {!!totalcount && (<p>Total edit clicked {totalcount}</p>)}
+                        
+                    </div>
+                    
+                )
+            }
+        }
+        ReactDOM.render(
+            <div className="Container">
+                <Eventclass title="Why Props? Oh!">বায়ুদূষণে করোনায় মৃত্যুর ঝুঁকি বেশি: মার্কিন গবেষক দল</Eventclass>
+                <Eventclass>Shakib is the best Cricketer</Eventclass>
+            </div>,
+            document.getElementById('react')
+        );
+    </script>
+</body>
+</html>
